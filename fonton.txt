@@ -1,0 +1,98 @@
+ ------------------------------------------------------------------------------
+	Add "font on" session	Version 1.1	Copyright (c)2025 TORO
+ ------------------------------------------------------------------------------
+
+	ポータブル運用で一時的にフォントを使うためのソフトです。
+	フォルダに入れたフォントを一括で一時登録します。
+
+
+●動作環境
+・対応/動作確認 OS
+
+	Windows 2000～11/2025 で動作します。
+
+・レジストリ
+
+	レジストリは使用しません。
+
+
+●使用方法
+
+	fonton.exe (x86版、x64版は fonton64.exe、ARM64版は fonton64A.exe) を
+	実行すると、fonton.exe があるフォルダにある font フォルダ下の
+	全てフォントを一時登録します。正常終了の時は、何も表示しません。
+
+	一時登録したフォントは、サインアウト / ログオフ / シャットダウン /
+	再起動時に登録解除されます。
+
+	font フォルダに登録できないフォントやフォント以外のファイルがあると
+	エラーになります。
+
+
+	別途配布していた fontr.exe と同様にフォントの登録解除をしたい場合は、
+	コマンドラインに「-r」を付けて実行するか、fonton.exe をコピーして
+	fonton-r.exe に名前変更して実行してください。
+
+
+●オプション
+
+	動作オプションをコマンドライン、又はファイル名の埋め込みで
+	指定できます。
+
+	例1 コマンドライン) fonton.exe -s -r
+	例2 ファイル名埋め込み) fonton-s-r.exe
+
+	使用できるオプションは次のとおりです。
+	-r  font フォルダに入っているフォントの登録解除を行います。
+	-s  エラーメッセージの表示を行いません。
+
+
+●最後に
+
+	・このソフトウェアはフリーソフトウェアです。著作権は「TORO」、
+	  「高橋 良和」にあります。
+
+	・x86版は、Borland C++ Version 5.02 を用いて構築しています。
+	  x64版は、Visual Studio 2008 を用いて構築しています。
+	  ARM64版は、Visual Studio 2022 を用いて構築しています。
+
+
+●License
+fonton は、MITライセンスに基づいて公開しています。
+fonton is released under the MIT License.
+
+Copyright (c) 2025 TORO
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the Software
+is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+●履歴
+1.1	2025/05/31
+・Windows に登録済みのフォントを登録しないようにした(セキュリティ誤検出対策)
+・コマンドラインオプション -r (登録解除)、-s (報告無し)を追加
+・ファイル名にコマンドラインオプションを記載できるようにした
+
+1.0	2025/02/28
+・初版
+
+
+●連絡先／一次配布先						TORO／高橋 良和
+
+E-mail	toroid.jp@gmail.com
+WWW	http://toro.d.dooo.jp/	https://toroidj.github.io/
